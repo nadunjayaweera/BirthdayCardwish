@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+}
+.balloon{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.balloon-top,
+.balloon-bottom {
+    display: flex;
+    flex-direction: row;
+}
+.balloon-top > div {   
+    padding: 50px;
+    /* background-color: red; */
+    margin: 10px;
+    border-radius: 80% 80% 80% 80%; 
+}
+.balloon-bottom > div {   
+    padding: 50px;
+    /* background-color: red; */
+    margin: 10px;
+    border-radius: 80% 80% 80% 80%; 
+}
+.charH {
+    background-color: #fff200;
+    /* box-shadow: 0 1px 2px red; */
+    position: relative;
+    animation: balloon3 4s linear infinite;
+}
+.charH::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #fff200;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charA {
+    background-color: #686de0;
+    position: relative;
+    animation: balloon2 4s linear infinite;
+}
+.charA::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #686de0;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charP {
+    background-color: #ff9ff3;
+    position: relative;
+    animation: balloon4 4s linear infinite;
+}
+.charP::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #ff9ff3;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charY {
+    background-color: #eb2f06;
+    position: relative;
+    animation: balloon1 4s linear infinite;
+}
+.charY::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #eb2f06;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charB {
+    background-color: #32ff7e;
+    position: relative;
+    animation: balloon2 4s linear infinite;
+}
+.charB::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #32ff7e;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charI {
+    background-color: #ffb8b8;
+    position: relative;
+    animation: balloon1 3.5s linear infinite;
+}
+.charI::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #ffb8b8;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charR {
+    background-color: #FFC312;
+    position: relative;
+    animation: balloon1 5s linear infinite;
+}
+.charR::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #FFC312;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charT {
+    background-color: #D980FA;
+    position: relative;
+    animation: balloon4 3s linear infinite;
+}
+.charT::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #D980FA;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.charD {
+    background-color: #fd9644;
+    position: relative;
+    animation: balloon1 4s linear infinite;
+}
+.charD::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #fd9644;
+    border-left: 8px solid transparent;
+    top: 90%;
+    right: 53px;
+}
+.avatar {
+    width: 350px; 
+    height: 350px;
+    margin: 30px auto
+}
+.avatar > img {
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.text {
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Roboto Slab', serif; */
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+}
+.charA, .charH, .charP, .charD, .charB, .charI, .charR, .charT, .charY {
+    font-family: 'Gorditas', cursive;
+    font-weight: 900;
+    font-size: 40px;
+    box-shadow: 0px 0px 20px #363535;
+    /* #2d3136 */
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gorditas:wght@700&family=Lobster&family=Oleo+Script:wght@700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gorditas:wght@700&family=Lobster&family=Oleo+Script:wght@700&family=Paytone+One&display=swap');
+
+@keyframes balloon1 {
+    0%, 100% { 
+        transform: translateY(0) rotate(-6deg);
+    }
+    50%{
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+@keyframes balloon2 {
+    0%,
+    100% {
+        transform: translateY(0) rotate(6deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(-8deg);
+    }
+}
+@keyframes balloon3 {
+    0%,
+    100% {
+        transform: translate(0, -10px) rotate(6eg);
+    }
+    50% {
+        transform: translate(-15px, 10px) rotate(-8deg);
+    }
+}
+@keyframes balloon4 {
+    0%,
+    100% {
+        transform: translate(10px, -10px) rotate(-8eg);
+    }
+    50% {
+        transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
+@keyframes phongTo {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.overplay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.show-item{
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    overflow: auto;
+    border-radius: 20px;
+    animation: phongTo 1s ease;
+    flex-direction: column;
+}
+.wish{
+    width: 90%;
+    margin: auto;
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+}
+.title{
+    text-align: center;
+}
+.active{
+    display: block;
+}
+
+@media only screen and (max-width: 1024px){
+    .balloon-top > div,
+    .balloon-bottom > div{
+        padding: 30px;
+    }
+    .balloon-top > div::after,
+    .balloon-bottom > div::after{
+        top: 85%;
+        right: 36px;
+    }
+    .show-item{
+        width: 70%;
+    }
+    .wish{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .balloon-top > div,
+    .balloon-bottom > div{
+        padding: 20px;
+    }
+    .balloon-top > div::after,
+    .balloon-bottom > div::after{
+        top: 83%;
+        right: 25px;
+    }
+    .show-item{
+        width: 70%;
+    }
+    .wish{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .balloon-top > div,
+    .balloon-bottom > div{
+        padding: 10px;
+        border-radius: 50% 50% 50% 50%;
+    }
+    .balloon-top > div::after,
+    .balloon-bottom > div::after{
+        top: 70%;
+        right: 12px;
+    }
+    .charA, .charH, .charP, .charD, .charB, .charI, .charR, .charT, .charY {
+        font-size: 25px;
+    }
+    .avatar {
+        width: 200px; 
+        height: 200px;
+        margin: 30px auto
+    }
+    .avatar > img {
+        width: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .show-item{
+        width: 70%;
+    }
+    .wish{
+        font-size: 15px;
+    }
+}
